@@ -25,7 +25,7 @@ app.add_middleware(
 @app.on_event("startup")
 def startup():
     init_db()
-    print("[OK] FastAPI Backend is live at http://127.0.0.1:8000")
+    print("[OK] FastAPI Backend is live on port 7860")
 
 @app.get("/health")
 def health_check():
